@@ -1,0 +1,300 @@
+body {
+  overflow-x: hidden;
+
+  overflow-y: scroll;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  min-height: 8vh;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  color: black;
+  text-transform: uppercase;
+  /* 각 글자 2px씩 간격을 줌*/
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+.nav-links {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(226, 226, 226);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+/*
+@media screen and (max-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+}
+*/
+.head_mid {
+  overflow: scroll;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+  align-items: center;
+  text-align: left;
+}
+.mid {
+  display: flex;
+}
+.mid_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.mid_right {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 500px;
+}
+
+.product_bar {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 80%;
+  height: 350px;
+  border: 1px solid black;
+}
+
+.items {
+  height: 800px;
+  padding: 100px;
+  width: 100%;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 0;
+  perspective: 500px;
+}
+
+div a {
+  margin-left: 10%;
+}
+.item {
+  overflow: hidden;
+  background-color: #f9f6f5;
+  width: 250px;
+  height: 300px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.15);
+}
+
+.btn_product {
+  background-color: black;
+  border: black;
+  color: white;
+  width: 150px;
+  height: 40px;
+}
+
+footer {
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  font-size: 3vw;
+}
+
+.customer_box {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+.customer_box.box2 {
+  margin-left: 50px;
+}
+
+.customer_box.box3 {
+  margin-left: 50px;
+}
+
+.circle_user {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.copyLight {
+  width: 100%;
+  height: 200px;
+  background-color: #5a5755;
+  color: white;
+}
+.mid_text {
+  font-size: 4em;
+  color: black;
+}
+
+.mid_text2 {
+  font-size: 1em;
+}
+
+.btn_buy {
+  width: 200px;
+  height: 50px;
+}
+
+
+.right_img{
+  height: 500px;
+}
+.left_img{
+  height: 500px;
+
+}
+@media screen and (max-width: 842px) {
+  body {
+    overflow-x: hidden;
+
+    overflow-y: scroll;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .head_mid {
+    font-size: 0.6em;
+  }
+
+  .left_img {
+    height: 300px;
+  }
+  .btn_buy{
+    width: 150px;
+    height: 40px;
+  }
+
+  .right_img {
+    height: 300px;
+  }
+
+  .mid_text {
+    font-size: 2.5em;
+    color: black;
+  }
+  .mid_text2 {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  body {
+    overflow-x: hidden;
+
+    overflow-y: scroll;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .head_mid {
+    font-size: 0.4em;
+  }
+  .mid_left img {
+    height: 150px;
+  }
+
+  .btn_buy {
+    width: 100px;
+    height: 40px;
+  }
+
+  .mid_right img {
+    height: 150px;
+  }
+
+  .mid_text {
+    font-size: 1.5em;
+    color: black;
+  }
+  .mid_text2 {
+    font-size: 0.7em;
+  }
+}
